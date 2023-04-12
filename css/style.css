@@ -7,10 +7,14 @@
 
 -Font Weights
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 -Line Heights:
 Default: 1
-
+1.05
+Pargraph Default 1.6
 
 
 ---02 COLORS
@@ -25,7 +29,7 @@ Default: 1
 ---05 SHADOWS
 
 ---06 BORDER RADIUS
-
+Default 10px
 ---07 WHITESPACE
 -SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -102,6 +106,8 @@ body {
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
+
+
 /***********************/
 /* HEADER              */
 /***********************/
@@ -127,11 +133,13 @@ body {
 .main-nav-list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 3.2rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -144,6 +152,18 @@ body {
   color: #cf711f;
 }
 
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited{
+  padding: 1.2rem 2.4rem;
+  color:#fff;
+  border-radius: 10px;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active{
+  background-color: #cf711f;
+}
 /************************/
 /*     HERO SECTION     */
 /************************/
@@ -205,3 +225,38 @@ body {
   color: #ff7700;
   font-weight: 700;
 }
+
+/******************************/
+/*     SECTION HOW IT WORKS   */
+/******************************/
+
+.section-how{
+  padding: 9.6px 0;
+  background-color: orchid;
+  
+}
+
+.grid{
+  display: grid;
+  
+  gap: 9.6rem;
+}
+
+.grid--2-cols{
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-cols{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.section-how div{
+  padding:100px;
+  font-size: 50px;
+}
+
+.section-how div:nth-child(1){background-color: aqua;}
+.section-how div:nth-child(2){background-color: rgb(18, 128, 32);}
+.section-how div:nth-child(3){background-color: rgb(255, 115, 0);}
+.section-how div:nth-child(4){background-color: rgb(255, 0, 204);}
