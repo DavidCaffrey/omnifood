@@ -1,136 +1,3 @@
-/* 
----01 TYPOGRAPHY SYSTEM
-
-
- -FONT SIZE SYSTEM (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
--Font Weights
-Default: 400
-Medium: 500
-Semi-bold: 600
-Bold: 700
-
--Line Heights:
-Default: 1
-1.05
-Pargraph Default 1.6
-
-
----02 COLORS
--Primary: #e67e22
-
--Tints: #fdf2e9
--Shades:#e67d227d
--Accents:
--Greys: 
--#555
-
----05 SHADOWS
-
----06 BORDER RADIUS
-Default 10px
----07 WHITESPACE
--SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
-/* Gloabl reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* font size set to 10px to make rem calc easier */
-  /* 10px / 16px = 0.625 = 62.5%  */
-  /* Percentage of user settings does not interfer with the user adjustments */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-/***********************/
-/* GENERAL COMPONENTS   */
-/***********************/
-
-.container{
-  max-width: 120rem;
-  margin : 0 auto;
-  padding: 0 3.2rem;
-}
-
-.grid{
-  display: grid;
-  
-  gap: 9.6rem;
-}
-
-.grid--2-cols{
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid--3-cols{
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid---4-cols{
-  grid-template-columns: repeat(4,1fr);
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.5px;
-  color: #333;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  text-decoration: none;
-  border-radius: 10px;
-  /* transition added to root state*/
-  transition: all 0.3ms;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #ff7700;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #e67d227d;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #e67d22c7;
-  /* border inside */
-  box-shadow: inset 0 0 0 3px #e67e22;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 
 /***********************/
 /* HEADER              */
@@ -172,20 +39,20 @@ body {
 }
 
 .main-nav-link:hover,
-.main-nav-link:active{
+.main-nav-link:active {
   color: #cf711f;
 }
 
 .main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited{
+.main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
-  color:#fff;
+  color: #fff;
   border-radius: 10px;
   background-color: #e67e22;
 }
 
 .main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active{
+.main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
 /************************/
@@ -250,22 +117,125 @@ body {
   font-weight: 700;
 }
 
+/* ***************** ****/
+/*  SECTION FEATURED IN */
+/* ******************** */
+
+.section-featured{
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-featured-in{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img{
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 0.3;
+}
+
 /******************************/
 /*     SECTION HOW IT WORKS   */
 /******************************/
 
-.section-how{
+.section-how {
   padding: 9.6rem 0;
- 
+}
+
+.step-number{
+  font-size:8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description{
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-image-box{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.step-image-box::before,
+.step-image-box::after{
+  content: "";
+  display: block;
   
+  border-radius: 50%;
+  /* height:60%; */
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+  
+  
+  
+  
+
+.step-image-box::before{
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #f3e0cf;
+  z-index: -1000;
 }
 
-.step-img{
+.step-image-box::after{
   width: 50%;
+  padding-bottom: 50%;
+  background-color: #f3d2b4;
+  z-index: -999;
+}
+.step-img {
+  width: 35%;
 }
 
+/******************************/
+/*     SECTION MEALS   */
+/******************************/
 
+.section-meals {
+  padding: 9.6rem 0;
+}
 
+.meal-title{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
 
+}
 
+.meal-attributes{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
 
+}
+
+.meal-attribute{
+  font-size: 1.8rem;
+}
+
+.meal-img{
+  width: 100%;
+}
