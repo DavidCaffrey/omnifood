@@ -1,5 +1,7 @@
 /***********************/
+
 /* HEADER              */
+
 /***********************/
 
 .header {
@@ -17,7 +19,9 @@
 }
 
 /***********************/
+
 /* NAVIGATION          */
+
 /***********************/
 
 .main-nav-list {
@@ -54,8 +58,11 @@
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+
 /************************/
+
 /*     HERO SECTION     */
+
 /************************/
 
 .section-hero {
@@ -117,7 +124,9 @@
 }
 
 /* ***************** ****/
+
 /*  SECTION FEATURED IN */
+
 /* ******************** */
 
 .section-featured {
@@ -146,7 +155,9 @@
 }
 
 /******************************/
+
 /*     SECTION HOW IT WORKS   */
+
 /******************************/
 
 .section-how {
@@ -176,7 +187,6 @@
 .step-image-box::after {
   content: "";
   display: block;
-
   border-radius: 50%;
   /* height:60%; */
   position: absolute;
@@ -198,12 +208,15 @@
   background-color: #f3d2b4;
   z-index: -999;
 }
+
 .step-img {
   width: 35%;
 }
 
 /******************************/
+
 /*     SECTION MEALS   */
+
 /******************************/
 
 .section-meals {
@@ -311,7 +324,9 @@
 }
 
 /******************************/
+
 /*     SECTION TESTIMONIALS   */
+
 /******************************/
 
 .section-testimonials {
@@ -350,9 +365,13 @@
 }
 
 /* ******************** */
+
 /*  SECTION GALLERY       */
+
 /*                       */
+
 /* ********************* */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -360,8 +379,8 @@
   padding: 1.6rem;
 }
 
-.gallery-item{
-  overflow:hidden;
+.gallery-item {
+  overflow: hidden;
 }
 
 .gallery-item img {
@@ -370,6 +389,16 @@
   transition: all 0.4s;
 }
 
-.gallery-item img:hover{
+.gallery-item img:hover {
   transform: scale(1.1);
+}
+
+/******************************/
+
+/*     SECTION Pricing  */
+
+/******************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
 }
