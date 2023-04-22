@@ -380,7 +380,7 @@
 /******************************/
 
 .section-pricing {
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem;
 }
 
 .pricing-plan {
@@ -580,6 +580,11 @@
 
 /******************************/
 
+.footer {
+  padding: 12.8rem 0;
+  border: 1px solid #eee;
+}
+
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
@@ -606,6 +611,16 @@
   color: #767676;
   line-height: 1.6rem;
   margin-top: auto !important;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
 }
 
 .social-links {
