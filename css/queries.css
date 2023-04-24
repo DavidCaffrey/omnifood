@@ -117,8 +117,7 @@
     display: block;
   }
 
-  .icon-mobile-nav {
-  }
+
 
   .main-nav {
     background-color: rgba(220, 220, 242, 0.97);
@@ -164,5 +163,40 @@
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3.6rem;
+  }
+}
+/* 700px SMALL TALETS AND BELOW */
+@media(max-width:44em){
+  .grid--3-cols,.grid--4-cols{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets{
+    grid-column: 1 /-1;
+    justify-self: center;
+  }
+  .heading-secondary{
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan{
+    width: 100%;
+  }
+  .grid--footer{
+    grid-template-columns: repeat(6,1fr);
+  }
+
+  .logo-col{
+    grid-column: span 3;
+  }
+
+  .address-col{
+    justify-self: center;
+  }
+
+  .nav-col{
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
   }
 }
