@@ -49,6 +49,7 @@ html {
   /* Percentage of user settings does not interfer with the user adjustments */
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
