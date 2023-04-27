@@ -40,6 +40,23 @@ allLinks.forEach(function (link) {
 });
 
 
+// //////////////////////////////////////////
+//  STICKY NAVIGATION
+// ///////////////////////////////////////////
+const sectionHeroEl = document.querySelector('.section-hero');
+
+
+const observer = new IntersectionObserver(function(entries) {
+  const ent = entries[0];
+  console.log(ent);
+},{
+  // In the viewport
+  root: null,
+  threshold: 0,
+})
+observer.observe(sectionHeroEl);
+
+
         function checkFlexGap() {
             var flex = document.createElement("div");
             flex.style.display = "flex";
