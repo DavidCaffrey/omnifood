@@ -270,6 +270,8 @@
   }
 }
 
+
+/* FIXING GAP PROBLEMS */
 .no-flexbox-gap .main-nav-list li:not(:last-child) {
   margin-right: 4.8rem;
 }

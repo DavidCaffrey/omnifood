@@ -53,7 +53,7 @@ const observer = new IntersectionObserver(
     if (ent.isIntersecting === false) {
       document.body.classList.add("sticky");
     }
-    if (ent.isIntersecting === true) {
+    if (ent.isIntersecting) {
       document.body.classList.remove("sticky");
     }
   },
